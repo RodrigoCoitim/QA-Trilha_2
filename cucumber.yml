@@ -1,0 +1,6 @@
+default: --no-source --color --format pretty --format json --out=Data/Reports/report.json
+
+qa_local: -p default firefox=true QA=true 
+qa_report: -p default firefox=true QA=true screenshot=true report=true
+qa_headless: -p default firefox_headless=true QA=true
+qa_headless_report: -p default firefox_headless=true QA=true screenshot=true report=true
